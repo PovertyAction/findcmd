@@ -24,7 +24,7 @@ prog def findcmd, rclass
 
 	local path `"`c(sysdir_plus)'"'
 
-	insheet using "`path'/f/findcmd_commands.txt", clear 
+	insheet using "findcmd_commands.txt", clear 
 	levelsof v1, loc(bcmdlist) clean
 
 	import delim using "`using'", stringcols(_all) clear //bindquote(strict) maxquotedrows(1500)

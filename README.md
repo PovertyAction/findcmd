@@ -5,6 +5,7 @@
 ```stata
 * findcmd can be installed from github
 
+net set other `"`c(sysdir_plus)'/f"'
 net install findcmd, all replace ///
 	from("https://raw.githubusercontent.com/PovertyAction/findcmd/main")
 ```

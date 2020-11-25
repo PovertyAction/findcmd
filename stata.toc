@@ -1,0 +1,2 @@
+v 1.0.0
+d Stata command to automatically find built-in commands and user written commands used in a do or ado file.

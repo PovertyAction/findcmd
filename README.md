@@ -6,5 +6,5 @@
 * findcmd can be installed from github
 
 net install findcmd, all replace ///
-	from("https://raw.githubusercontent.com/PovertyAction/findcmd/master")
+	from("https://raw.githubusercontent.com/PovertyAction/findcmd/main")
 ```

@@ -23,12 +23,8 @@ prog def findcmd, rclass
 	save `currentdata', emptyok
 
 	local path `"`c(sysdir_plus)'"'
-	cap findfile "`path'/f/findcmd_commands.txt"
-	if _rc{
-		copy "https://github.com/PovertyAction/findcmd/blob/main/findcmd_commands.txt" "`path'/f/findcmd_commands.txt"	
-	}
 	
-	insheet using "findcmd_commands.txt", clear 
+	insheet using "`path'/f/findcmd_commands.txt", clear 
 	levelsof v1, loc(bcmdlist) clean
 
 	import delim using "`using'", stringcols(_all) clear //bindquote(strict) maxquotedrows(1500)

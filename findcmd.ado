@@ -11,6 +11,7 @@
 			/* The current commands can only consider command only if the exp followed by if command is one word */
 * Include and do files/ado files - tricky
 
+version 	12.0
 
 cap pr drop findcmd
 prog def findcmd, rclass

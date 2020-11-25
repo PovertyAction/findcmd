@@ -213,9 +213,9 @@ prog def findcmd, rclass
 
 	u `currentdata', clear 
 	noi di `"The do file "`using'" is successfully parsed."'
-	noi di `"	Built-in commands: `abuiltin'"'
-	noi di `"	User written commands: `usercmd'"'
-	noi di `"	Defined programs: `defined'"'
+	if "`abuiltin'" != "" noi di `"	Built-in commands: `abuiltin'"'
+	if "`usercmd'" != ""  noi di `"	User written commands: `usercmd'"'
+	if "`defined'" != ""  noi di `"	Defined programs: `defined'"'
 	noi di `"{stata "return list":{it:click to see return list}}"'
 end 
 

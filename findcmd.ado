@@ -189,8 +189,8 @@ prog def findcmd, rclass
 			loc abuiltin : list abuiltin - defined
 
 			
-			return scalar builtin_N = wordcount("`: list cmdlist - usercmd'")
-			return scalar usercmd_N = wordcount("`: list abuiltin - defined'")
+			return scalar builtin_N = wordcount("`abuiltin'")
+			return scalar usercmd_N = wordcount("`usercmd'")
 			return scalar defined_N = wordcount("`defined'")
 
 			return loc builtin  "`abuiltin'"

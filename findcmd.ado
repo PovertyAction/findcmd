@@ -22,7 +22,7 @@ prog def findcmd, rclass
 	tempfile currentdata
 	save `currentdata', emptyok
 
-	local path `"` c(sysdir_plus)'"'
+	local path `"`c(sysdir_plus)'"'
 
 	insheet using "`path'/commands.txt", clear 
 	levelsof v1, loc(bcmdlist) clean

@@ -26,7 +26,7 @@ prog def findcmd, rclass
 	insheet using "`path'/f/findcmd_commands.txt", clear 
 	levelsof v1, loc(bcmdlist) clean
 
-	import delim using "`using'", stringcols(_all) clear //bindquote(strict) maxquotedrows(1500)
+	import delim using "`using'", stringcols(_all) clear 
 
 		* Split and find out the commands
 			g command = ""

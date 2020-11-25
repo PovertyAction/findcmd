@@ -22,7 +22,9 @@ prog def findcmd, rclass
 	tempfile currentdata
 	save `currentdata', emptyok
 
-	insheet using commands.txt, clear 
+	local path `"` c(sysdir_plus)'"'
+
+	insheet using "`path'/commands.txt", clear 
 	levelsof v1, loc(bcmdlist) clean
 
 	import delim using "`using'", stringcols(_all) clear //bindquote(strict) maxquotedrows(1500)
